@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #ffefa0, #ffd57e);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.mensaje {
+    font-family: 'Dancing Script', cursive;
+    color: #6d4c41;
+    font-size: 4vw; /* Adaptativo basado en el ancho de la pantalla */
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Media queries para diferentes rangos de ancho de pantalla */
+
+/* Tabletas y dispositivos de tamaño mediano */
+@media (max-width: 768px) {
+    .mensaje {
+        font-size: 5vw;
+        padding: 3vw;
+    }
+}
+
+/* Teléfonos y dispositivos pequeños */
+@media (max-width: 480px) {
+    .mensaje {
+        font-size: 6vw;
+        padding: 4vw;
+    }
+}
+/* Estilos Base */
+.mensaje {
+    font-size: 2rem; /* Tamaño de fuente base */
+    padding: 20px;
+    /* Otros estilos */
+}
+
+/* Media queries para pantallas más pequeñas (incluidos iPhone 12 Mini, iPhone 12, iPhone 12 Pro) */
+@media only screen and (max-width: 390px) {
+    .mensaje {
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        padding: 15px;
+    }
+}
+
+/* Media queries para pantallas más grandes (incluido iPhone 12 Pro Max) */
+@media only screen and (min-width: 391px) and (max-width: 428px) {
+    .mensaje {
+        font-size: 1.75rem;
+        padding: 18px;
+    }
+}
+
+/* Media queries para orientación horizontal */
+@media only screen and (orientation: landscape) {
+    .mensaje {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ejemplo de Flexbox para centrar contenido */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
